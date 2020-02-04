@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+      #      - yum --disablerepo=epel install -y mariadb
+      #      - echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+      - yum update -y
+      - yum install -y git
+  build:
+    commands:
+      - echo "test"
