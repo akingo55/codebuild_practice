@@ -6,6 +6,8 @@ phases:
       docker: 18
     commands:
       - yum --disablerepo=epel install -y mariadb
+      - echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+      - yum update -y
   build:
     commands:
       - echo "test"
