@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+    commands:
+      - yum --disablerepo=epel -y mariadb
+  build:
+    commands:
+      - echo "test"
