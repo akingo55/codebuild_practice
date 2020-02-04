@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       docker: 18
     commands:
-      - yum --disablerepo=epel -y mariadb
+      - yum install -y mariadb
   build:
     commands:
       - echo "test"
